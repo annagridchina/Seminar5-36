@@ -11,7 +11,7 @@ public class Library36
   {
     for (int i = 0; i < array.Length; i++)
     {
-      array[i] = Random.Shared.Next(100, 999);
+      array[i] = Random.Shared.Next(-1000, 1000);
     }
   }
 

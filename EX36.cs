@@ -9,13 +9,12 @@ using static System.Console;
     int[] ar = CreateArray(4);
     Fill(ar);
     Console.WriteLine(Print(ar));
-    int result = 0;
+    int sum = 0;
 
-for (int i = 0; i < ar.Length; i++)
-{
-    if (ar[i] % 2 == 0)
-    result = result + 1;
+for (int i = 1; i < ar.Length; i = i + 2)
+{  
+    sum = sum + ar[i];
 }
-     Console.WriteLine(result);
+     Console.WriteLine(sum);
 }
 
